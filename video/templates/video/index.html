@@ -8,7 +8,7 @@
 {% if last_video %}
 <ul>
     {% for video in last_video %}
-        <li><a href="% url detail {video.id} %">{{ video.title}}</a></li>
+        <li><a href="% url 'video:detail' {video.id} %">{{ video.title}}</a></li>
     {% endfor %}
 
 </ul>
