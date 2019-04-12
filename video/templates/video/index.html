@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if last_video %}
+<ul>
+    {% for video in last_video %}
+        <li><a href="% url detail {video.id} %">{{ video.title}}</a></li>
+    {% endfor %}
+
+</ul>
+{% else %}
+<p>No polls are availabel.</p>
+{% endif %}
+</body>
+</html>
