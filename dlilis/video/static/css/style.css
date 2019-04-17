@@ -1,0 +1,28 @@
+body{
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #dadbdc;
+
+    background: #1e1d1f;
+
+}
+
+/* headerbufen */
+header{
+    background-image: url("../images/hero-area.png")
+}
+.header-mid{
+
+}
+.seach{
+    border: 2px solid #dadbdc;
+    border-radius: 42px;
+
+}
+.seach select, .seach input, .seach button{
+    border: none;
+    outline: none;
+    color: #dadbdc;
+    background-color: transparent;
+}

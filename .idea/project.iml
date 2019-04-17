@@ -22,6 +22,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/video/templates" />
+        <option value="$MODULE_DIR$/blog/stormsha/templates" />
       </list>
     </option>
   </component>
