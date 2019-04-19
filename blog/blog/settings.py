@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
     'user',
+    'stormsha',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,9 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 SITE_DESCRIPTION = "StormSha的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动，静静寻觅生活的美好"
 
 # 网站关键词，用于SEO
 SITE_KEYWORDS = "StormSha,静觅,网络,IT,技术,博客,Python"
 
 AUTH_USER_MODEL = 'user.Ouser'
+
