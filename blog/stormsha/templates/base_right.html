@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-
 {% block right %}
-    <aside class="sidebar">
+<aside class="sidebar">
     <div class="widget widget_text">
         <div class="textwidget">
             <div class="social">
@@ -15,7 +13,7 @@
                         <div class="popover bottom in">
                             <div class="arrow"></div>
                             <div class="popover-title"></div>
-                            <div class="popover-content"><img src="../static/images/weixin.gif" ></div>
+                            <div class="popover-content"><img src="{% static 'stormsha/images/weixin.gif' %}" ></div>
                         </div>
                     </div>
                 </a>
@@ -31,7 +29,7 @@
                 <div class='slider-wrapper theme-bar'>
                     <div class='ribbon'></div>
                     <div id='metaslider_2698' class='nivoSlider'>
-                        <a href="https://cuiqingcai.com/1052.html" target="_blank"><img src="/static/images/wallpaper_5263464.jpg" height="300" width="320" data-title="Python爬虫学习系列教程" title="Python爬虫学习系列教程" alt="Python爬虫学习系列教程" class="slider-2698 slide-1720" /></a>
+                        <a href="https://cuiqingcai.com/1052.html" target="_blank"><img src="{% static 'stormsha/images/wallpaper_5263464.jpg' %}" height="300" width="320" data-title="Python爬虫学习系列教程" title="Python爬虫学习系列教程" alt="Python爬虫学习系列教程" class="slider-2698 slide-1720" /></a>
                     </div>
                 </div>
             </div>
@@ -61,12 +59,12 @@
     </div>
 <!--// meta slider-->
     <div class="widget widget_text">
-        <div class="textwidget"><p><a href="https://1024dada.com/?channel=cuiqingcai&#038;hmsr=%E5%B4%94%E5%BA%86%E6%89%8D&#038;hmpl=&#038;hmcu=&#038;hmkw=&#038;hmci="><img style="width: 100%;" src="/static/images/timͼƭ20181112165556.jpg" /><br />
+        <div class="textwidget"><p><a href="https://1024dada.com/?channel=cuiqingcai&#038;hmsr=%E5%B4%94%E5%BA%86%E6%89%8D&#038;hmpl=&#038;hmcu=&#038;hmkw=&#038;hmci="><img style="width: 100%;" src="{% static 'stormsha/images/timͼƭ20181112165556.jpg' %}" /><br />
 </a></p></div>
     </div>
     <div class="widget widget_text">
         <div class="textwidget">
-            <a href="https://developer.huaweicloud.com/campus?utm_source=cuiqingcai&utm_medium=blog&utm_campaign=campus"><img style="width:100%" src="/static/images/云服务器学生优惠套餐9元月.jpg"/></a>
+            <a href="https://developer.huaweicloud.com/campus?utm_source=cuiqingcai&utm_medium=blog&utm_campaign=campus"><img style="width:100%" src="{% static 'stormsha/images/云服务器学生优惠套餐9元月.jpg' %}"/></a>
         </div>
     </div>
     <div class="widget widget_archive">
@@ -78,7 +76,7 @@
     <div class="widget d_postlist">
         <div class="title"><h2>猜你喜欢</h2></div>
         <ul>
-            <li><a href="https://cuiqingcai.com/1076.html" title="Python爬虫实战五之模拟登录淘宝并获取所有订单" ><span class="thumbnail"><img src="../static/images/timthumb.php" alt="Python爬虫实战五之模拟登录淘宝并获取所有订单" /></span><span class="text">Python爬虫实战五之模拟登录淘宝并获取所有订单</span><span class="muted">2015-02-24</span><span class="muted">8,059评论</span></a></li>
+            <li><a href="https://cuiqingcai.com/1076.html" title="Python爬虫实战五之模拟登录淘宝并获取所有订单" ><span class="thumbnail"><img src="{% static 'stormsha/images/timthumb.php' %}" alt="Python爬虫实战五之模拟登录淘宝并获取所有订单" /></span><span class="text">Python爬虫实战五之模拟登录淘宝并获取所有订单</span><span class="muted">2015-02-24</span><span class="muted">8,059评论</span></a></li>
 
 
         </ul>
@@ -126,9 +124,8 @@
     </div>
     <div class="widget widget_text">
         <div class="textwidget">
-            <a href="https://edu.hellobi.com/course/157" style="display:none"><img src="../static/images/wx20180104-140302.png"/></a>
+            <a href="https://edu.hellobi.com/course/157" style="display:none"><img src="{% static 'stormsha/images/wx20180104-140302.png' %}"/></a>
         </div>
     </div>
 </aside>
-
 {% endblock %}

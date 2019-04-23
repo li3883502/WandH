@@ -6,7 +6,7 @@ from .models import Article, Bigcategory, Category, Tag
 
 class IndexView(generic.ListView):
     model = Article
-    template_name = 'stormsha/index.html'
+    template_name = 'stormsha/templates/index.html'
     context_object_name = 'articles'
 
 
