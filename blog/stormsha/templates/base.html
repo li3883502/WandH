@@ -21,6 +21,7 @@
         <link rel='next' href='https://cuiqingcai.com/page/2' />
 
         <!-- /all in one seo pack -->
+    <link rel='stylesheet' id='page-list-style-css'  href='{% static "stormsha/css/font-awesome.min.css" %}' type='text/css' media='all' />
         <link rel='dns-prefetch' href='//libs.baidu.com' />
         <link rel='dns-prefetch' href='//s.w.org' />
                 <script type="text/javascript">
@@ -138,18 +139,18 @@
             {% if cate %}
                 <li id="menu-item-14"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category {% if category == big.slug %}current-menu-item {% endif %} menu-item-has-children menu-item-14">
-                        <a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a>
+                        <a href="{% url 'stormsha:category' big.slug '' %}">{{ big.name }}</a>
                             <ul class="sub-menu">
                                 <!--导航条二级分类渲染-->
                                 {% for c in cate %}
-                                        <li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="{% url 'blog:category'  big.slug   c.slug  %}">{{ c.name }}</a></li>
+                                        <li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="{% url 'stormsha:category'  big.slug   c.slug  %}">{{ c.name }}</a></li>
                                 {% endfor %}
                             </ul>
                 </li>
 
             <!--无二级分类的一级分类渲染-->
             {% else %}
-                <li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page {% if category == big.slug %}current-menu-item {% endif %} menu-item-851"><a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a></li>
+                <li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page {% if category == big.slug %}current-menu-item {% endif %} menu-item-851"><a href="{% url 'stormsha:category' big.slug '' %}">{{ big.name }}</a></li>
             {% endif %}
         {% endfor %}
         <!--导航条结束-->
